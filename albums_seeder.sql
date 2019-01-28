@@ -1,6 +1,6 @@
 USE codeup_test_db;
 
-INSERT INTO albums (column2_artist, column3_name, column4_release_date, column5_sales, column6_genre)
+INSERT INTO albums (ARTIST, NAME, RELEASE_DATE, SALES, GENRE)
 
 VALUES("Michael Jackson", "Thriller", 1982, 47.3, "Pop, Rock, R&B"),
       ("Eagles", "Their Greatest Hits (1971-1975)", 1976, 41.2, "Country Rock, Soft Rock, Folk Rock"),
@@ -17,7 +17,7 @@ VALUES("Michael Jackson", "Thriller", 1982, 47.3, "Pop, Rock, R&B"),
       ("Michael Jackson", "Bad", 1987, 19.3, "Pop, Funk, Rock"),
       ("Alanis Morissette", "Jagged Little Pill", 1995, 24.4, "Alternative Rock"),
       ("Celine Dion", "Falling Into You", 1996, 20.2, "Pop, Soft Rock"),
-      ("The Beatles", "Sqt. Pepper's Lonely Hearts Club Band", 1967, 18.2, "Rock"),
+      ("The Beatles", "Sgt. Pepper's Lonely Hearts Club Band", 1967, 18.2, "Rock"),
       ("Michael Jackson", "Dangerous", 1991, 17.3, "Rock, Funk, Pop"),
       ("Adele", "21", 2011, 17.3, "Pop, Soul"),
       ("Celine Dion", "Let's Talk About Love", 1997, 17.3, "Rock, Funk, Pop"),
