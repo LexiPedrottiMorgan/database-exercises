@@ -28,3 +28,12 @@ JOIN departments ON departments.dept_no = dept_emp.dept_no
 WHERE titles.to_date = '9999-01-01' AND employees.departments.dept_name = 'Customer Service'
 GROUP BY titles.title
 ;
+
+-- Find the current salary of all current managers.
+SELECT departments.dept_name AS 'Department Name', CONCAT(employees.first_name, ' ', employees.last_name) AS 'Name', salaries.salary AS 'Salary'
+FROM employees
+JOIN dept_manager ON dept_manager.emp_no = employees.emp_no
+JOIN departments ON departments.dept_no = dept_manager.dept_no
+JOIN salaries ON salaries.emp_no = employees.emp_no
+WHERE salaries.to_date= '9999-01-01' AND dept_manager.to_date = '9999-01-01'
+;
